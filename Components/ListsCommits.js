@@ -7,8 +7,8 @@ export default function ListsCommits({results}) {
             <h4 className='pb-3'>Commit's Lists</h4>
             <div className="row">
                 {
-                    results.map(item => (
-                        <Item information={item.commit} />
+                    results.map((item, index) => (
+                        <Item key={index} information={item.commit} />
                     ))
                 }
 
