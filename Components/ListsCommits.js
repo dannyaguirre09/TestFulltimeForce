@@ -11,7 +11,6 @@ export default function ListsCommits({results}) {
                         <Item key={index} information={item.commit} />
                     ))
                 }
-
             </div>
         </div>
        
