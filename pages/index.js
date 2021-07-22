@@ -21,7 +21,7 @@ export async function getServerSideProps(context) {
   const USERNAME = process.env.USERNAME;
   const REPO = process.env.REPO;
   const SHA = process.env.SHA;
-  const url = `https://api.github.com/repos/dannyaguirre09/TestFulltimeForce/commits?sha=d5b9225a4404df1057c6702456141479ddbf1fe0`;
+  const url = `https://api.github.com/repos/dannyaguirre09/TestFulltimeForce/commits`;
   const result = await fetch(url).then(res => res.json()).catch(err => err.json());
   return {props: {results: result}}
 }
